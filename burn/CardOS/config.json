@@ -8,16 +8,8 @@
   "description": "CardOS - Modular Personal Operating System for M5Stack Cardputer",
   "binaries": [
     {
-      "filename": "bootloader.bin",
-      "offset": "0x1000"
-    },
-    {
-      "filename": "partitions.bin",
-      "offset": "0x8000"
-    },
-    {
-      "filename": "firmware.bin",
-      "offset": "0x10000"
+      "filename": "CardOS_single.bin",
+      "offset": "0x0"
     }
   ],
   "config": {
@@ -25,10 +17,5 @@
     "flash_size": "8MB",
     "flash_mode": "dio",
     "flash_freq": "80m"
-  },
-  "idf_version": "4.4",
-  "app": {
-    "min_rev": 1,
-    "max_rev": 100
   }
 }
