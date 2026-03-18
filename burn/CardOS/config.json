@@ -1,0 +1,34 @@
+{
+  "name": "CardOS",
+  "version": "0.1.0",
+  "author": "CardOS Team",
+  "website": "https://github.com/cardpda/cardos",
+  "chip": "esp32s3",
+  "platform": "arduino",
+  "description": "CardOS - Modular Personal Operating System for M5Stack Cardputer",
+  "binaries": [
+    {
+      "filename": "bootloader.bin",
+      "offset": "0x1000"
+    },
+    {
+      "filename": "partitions.bin",
+      "offset": "0x8000"
+    },
+    {
+      "filename": "firmware.bin",
+      "offset": "0x10000"
+    }
+  ],
+  "config": {
+    "baudrate": 921600,
+    "flash_size": "8MB",
+    "flash_mode": "dio",
+    "flash_freq": "80m"
+  },
+  "idf_version": "4.4",
+  "app": {
+    "min_rev": 1,
+    "max_rev": 100
+  }
+}
